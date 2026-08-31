@@ -14,7 +14,6 @@ public class Patterns{
         numberCrown(5);
         increasingNumberTriangle(5);
         increasingLetterTriangle(5); 
-        System.out.println();
         reverseLetterTriangle(5);
         alphaRamp(5);
         lettersTriangle(5);
@@ -22,6 +21,7 @@ public class Patterns{
         symmetricVoid(10);
         symmetricButterfly(10); 
         hollowRectangle(4);
+        concentricSquare(4);
     }
     public static void printSpaces(int n){
         for (int i = 0; i<n; i++){
@@ -250,6 +250,24 @@ public class Patterns{
             System.out.println();
         } 
     }
+
+    public static void concentricSquare(int n){
+        int size = 2*n-1;
+        for (int i = 0; i<2*n-1;i++){
+            for(int j = 0; j<2*n-1;j++){
+                int top = i;
+                int bottom = size-1-i;
+                int left = j;
+                int right = size - 1 - j;
+                int minDist = Math.min(Math.min(top, bottom), Math.min(left, right));
+                System.out.print(n-minDist);
+
+            
+            }
+            System.out.println();
+        }
+    }
+
 }
 
 
