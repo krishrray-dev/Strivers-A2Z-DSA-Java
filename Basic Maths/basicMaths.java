@@ -5,6 +5,8 @@ public class basicMaths{
         System.out.println(ifPalindrome(404));
         System.out.println(gcd(9, 12));
         System.out.println(ifArmstrong(153));
+        printDivisors(12);
+        ifPrime(2);
 
 
     }
@@ -56,6 +58,27 @@ public class basicMaths{
         }
         return (copyN == check);
     }
+    public static void printDivisors(int n){
+        int i = 1;
+        while(i<=n){
+            if(n%i==0){
+                System.out.print(i + " ");
+            }
+            i++;
+        }
+        System.out.println();
+    }
+    public static boolean ifPrime(int n){
+        int i = 2;
+        while(i<n){
+            if(n%i==0 && i!= n){
+                return true;
+            }
+            i++;
+        }
+        return false;
+    }
+    
         
 
 }
