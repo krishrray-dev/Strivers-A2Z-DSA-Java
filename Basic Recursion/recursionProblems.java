@@ -1,15 +1,15 @@
 public class recursionProblems {
     public static void main(String[] args) {
-        // printNames(10);
-        // printReverseNumbers(10);
-        // printNumbers(1);
-        //printSum(5,0);
-        // printFactorial(5, 1);
-        // printLinearNumbers(1, 10, 0);
-        // int[] a = {1,2,3,4};
-        // int b = a.length;
-        // int c = 0;
-        // printReverseArray(a, 0, a.length - 1);
+        printNames(10);
+        printReverseNumbers(10);
+        printNumbers(1);
+        printSum(5,0);
+        printFactorial(5, 1);
+        printLinearNumbers(1, 10, 0);
+        int[] a = {1,2,3,4};
+        int b = a.length;
+        int c = 0;
+        printReverseArray(a, 0, a.length - 1);
         String word = "MADAM";
         System.out.println(ifPalindrome(word, 0, word.length()-1 ));
         System.out.print(0 + " ," + 1);
